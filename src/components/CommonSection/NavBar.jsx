@@ -34,7 +34,7 @@ const NavBar = () => {
       <div className='bg-purple-50 grid grid-cols-6 gap-4 py-4 '>
         <div className='md:col-start-2 col-span-4'>
           <h1 className='font-bold md:text-7xl text-3xl
-    text-gray-800 ' style={{ fontFamily: 'CloisterBlack BT' }}>
+    text-black ' style={{ fontFamily: 'CloisterBlack BT' }}>
             The News Hub
           </h1>
           <p className='md:block hidden text-md text-gray-500 py-2'>{moment().format('dddd, MMMM D, YYYY')}</p>
