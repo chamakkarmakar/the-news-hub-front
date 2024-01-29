@@ -1,8 +1,31 @@
 import moment from 'moment'
-import React from 'react'
-import { FaFacebookSquare,FaInstagram ,FaTwitter,FaYoutube   } from "react-icons/fa";
+import React, { useState } from 'react'
+import { FaFacebookSquare, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { RxCross1, RxHamburgerMenu } from 'react-icons/rx';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const navItems = [
+    {
+      item: "Home",
+      to: "/"
+    },
+    {
+      item: "Applied Jobs",
+      to: "/applied"
+    },
+    {
+      item: "Blog",
+      to: "/blog"
+    },
+    {
+      item: "Contact Us",
+      to: "/#contact"
+    }
+
+
+  ];
+  const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <div className='shadow-lg w-full fixed bottom-0 left-0 bg-black pb-2 pt-12'>
 
@@ -55,6 +78,7 @@ const Footer = () => {
       </div>
 
     </div>
+    
   )
 }
 
