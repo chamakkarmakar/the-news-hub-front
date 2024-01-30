@@ -12,7 +12,7 @@ const NewsCard = ({news}) => {
     
 
     return (
-        <div className="md:w-2/5 border rounded-lg w-full h-auto md:mx-auto p-5 mb-10 shadow-lg">
+        <div className="md:w-3/5 border rounded-lg w-full h-auto md:mx-auto p-5 mb-10 shadow-lg">
             <div className='overflow-hidden'>
                 <img src={ urlToImage} alt="" className='w-full h-[250px] object-cover rounded-md transition ease-in-out delay-300 duration-500 transform-none hover:scale-125' />
             </div>

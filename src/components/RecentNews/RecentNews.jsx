@@ -17,7 +17,7 @@ const RecentNews = () => {
       })
   }, [])
   return (
-    <div className='mt-10 mx-5'>
+    <div className='mt-10 mx-5 col-span-4'>
       {
         allNews.slice(5, 20).map((news,index) =>
           <NewsCard key={index} news={news}/>
